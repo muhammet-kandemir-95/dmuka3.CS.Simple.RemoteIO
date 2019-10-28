@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dmuka3.CS.Simple.RemoteIO", "dmuka3.CS.Simple.RemoteIO\dmuka3.CS.Simple.RemoteIO.csproj", "{F4ACDA4F-C7AF-4254-812B-7C969DA994DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4ACDA4F-C7AF-4254-812B-7C969DA994DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4ACDA4F-C7AF-4254-812B-7C969DA994DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4ACDA4F-C7AF-4254-812B-7C969DA994DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4ACDA4F-C7AF-4254-812B-7C969DA994DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {766C0F33-8CE9-496F-80FB-E189F1857FA7}
+	EndGlobalSection
+EndGlobal
