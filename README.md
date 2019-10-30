@@ -15,47 +15,47 @@
 ```csharp
 // We are creating a server.
 RemoteIOServer server = new RemoteIOServer("muhammed", "123123", 2048, 4, 9090, timeOutAuth: 1);
-      // Start server async.
+// Start server async.
 new Thread(() =>
 {
   server.Start();
 }).Start();
 
-      // Wait the server
+// Wait the server
 Thread.Sleep(1000);
 
-      // Create a client to connect to server.
+// Create a client to connect to server.
 RemoteIOClient client = new RemoteIOClient("127.0.0.1", 9090);
-      // Start communication.
+// Start communication.
 client.Start("muhammed", "123123", 2048);
 
-      // Write a file with byte[].
+// Write a file with byte[].
 client.WriteFile("my_nunit_text_file.txt", Encoding.UTF8.GetBytes("MUHAMMET KANDEMİR"));
-      // Read a file from server.
+// Read a file from server.
 var v = Encoding.UTF8.GetString(client.ReadFile("my_nunit_text_file.txt"));
-      // Delete a file on server.
+// Delete a file on server.
 client.DeleteFile("my_nunit_text_file.txt");
 
-      // Delete a directory recursive on server.
+// Delete a directory recursive on server.
 client.DeleteDirectory("my_nunit_directory");
-      // Create a directory on server.
+// Create a directory on server.
 client.CreateDirectory("my_nunit_directory");
-      // Create a directory on server again.
-      client.CreateDirectory("my_nunit_directory\\sub");
-      // Checking file exists.
+// Create a directory on server again.
+client.CreateDirectory("my_nunit_directory\\sub");
+// Checking file exists.
 var exists1 = client.FileExists("my_nunit_directory\\sub\\test.txt");
-      // Write a file with byte[].
+// Write a file with byte[].
 client.WriteFile("my_nunit_directory\\sub\\test.txt", Encoding.UTF8.GetBytes("MUHAMMET KANDEMİR"));
-      // Checking file exists.
-      var exists2 = client.FileExists("my_nunit_directory\\sub\\test.txt");
-      // Write a file with byte[].
-      client.WriteFile("my_nunit_directory\\test.txt", Encoding.UTF8.GetBytes("MUHAMMET KANDEMİR"));
-      // Get file list in a directory from server.
+// Checking file exists.
+var exists2 = client.FileExists("my_nunit_directory\\sub\\test.txt");
+// Write a file with byte[].
+client.WriteFile("my_nunit_directory\\test.txt", Encoding.UTF8.GetBytes("MUHAMMET KANDEMİR"));
+// Get file list in a directory from server.
 var files = client.GetFiles("my_nunit_directory", onlyCurrent: false);
-      // Delete a directory recursive.
+// Delete a directory recursive.
 client.DeleteDirectory("my_nunit_directory");
 
-      // Close client and server.
+// Close client and server.
 client.Dispose();
 server.Dispose();
 
