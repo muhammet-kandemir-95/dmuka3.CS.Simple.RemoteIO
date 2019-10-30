@@ -69,4 +69,4 @@ Assert.AreEqual(files[1], "sub\\test.txt");
 
  You may wonder what is the "2048". It is key size of RSA. We always use RSA during communication on TCP. This is security to save your secret datas.
  
- You have to know that you will never get an error while you are using some methods. For instance, DeleteDirectory doesn't throw and error if the directory doesn't exist. Just like DeleteFile. But don't forget, you can get an error about another reasons(File locked, path is wrong or something like that).
+  You have to know that you will never get an error while you are using some methods. For instance, DeleteDirectory doesn't throw and error if the directory doesn't exist. Just like DeleteFile. But don't forget, you can get an error about another reasons(File locked, path is wrong or something like that).
