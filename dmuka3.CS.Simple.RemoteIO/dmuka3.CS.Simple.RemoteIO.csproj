@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\k8a1n\mpf\projects\github\dmuka3.CS.Simple.RemoteIO\dmuka3.CS.Simple.RemoteIO\dmuka3.CS.Simple.RemoteIO.xml</DocumentationFile>
+    <DocumentationFile>..\dmuka3.CS.Simple.RemoteIO\dmuka3.CS.Simple.RemoteIO.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
