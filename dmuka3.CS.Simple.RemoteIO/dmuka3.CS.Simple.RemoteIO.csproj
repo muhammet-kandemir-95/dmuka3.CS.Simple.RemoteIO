@@ -16,7 +16,7 @@
   <ItemGroup>
     <PackageReference Include="dmuka3.CS.Simple.Semaphore" Version="1.0.1" />
     <PackageReference Include="dmuka3.CS.Simple.TCP" Version="1.0.5" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
 </Project>
